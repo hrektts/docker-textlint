@@ -1,0 +1,33 @@
+FROM hrektts/ubuntu:16.04.20161213
+MAINTAINER mps299792458@gmail.com
+
+ENV TEXTLINT_VERSION=7.2.1
+
+RUN wget -qO - https://deb.nodesource.com/setup_7.x | sudo -E bash - \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN npm install -g \
+      textlint@${TEXTLINT_VERSION} \
+      textlint-rule-preset-jtf-style \
+      textlint-rule-ja-no-abusage \
+      textlint-rule-ja-no-mixed-period \
+      textlint-rule-ja-no-successive-word \
+      textlint-rule-ja-no-weak-phrase \
+      textlint-rule-max-comma \
+      textlint-rule-max-kanji-continuous-len \
+      textlint-rule-max-ten \
+      textlint-rule-no-double-negative-ja \
+      textlint-rule-no-doubled-conjunction \
+      textlint-rule-no-doubled-conjunctive-particle-ga \
+      textlint-rule-no-doubled-joshi \
+      textlint-rule-no-dropping-the-ra \
+      textlint-rule-no-exclamation-question-mark \
+      textlint-rule-no-hankaku-kana \
+      textlint-rule-no-mix-dearu-desumasu \
+      textlint-rule-no-nfd \
+      textlint-rule-sentence-length \
+      textlint-rule-spellcheck-tech-word
+
+WORKDIR /data
+VOLUME ["/data"]
