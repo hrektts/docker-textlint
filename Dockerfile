@@ -1,5 +1,6 @@
 FROM hrektts/ubuntu:16.04.20170802
-MAINTAINER mps299792458@gmail.com
+LABEL maintainer="mps299792458@gmail.com" \
+      version="8.2.1"
 
 ENV TEXTLINT_VERSION=7.2.1
 
