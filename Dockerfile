@@ -2,7 +2,7 @@ FROM hrektts/ubuntu:16.04.20170802
 LABEL maintainer="mps299792458@gmail.com" \
       version="8.2.1"
 
-ENV TEXTLINT_VERSION=7.2.1
+ENV TEXTLINT_VERSION=8.2.1
 
 RUN wget -qO - https://deb.nodesource.com/setup_8.x | sudo -E bash - \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs \
