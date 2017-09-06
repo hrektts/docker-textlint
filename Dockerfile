@@ -3,7 +3,7 @@ MAINTAINER mps299792458@gmail.com
 
 ENV TEXTLINT_VERSION=7.2.1
 
-RUN wget -qO - https://deb.nodesource.com/setup_7.x | sudo -E bash - \
+RUN wget -qO - https://deb.nodesource.com/setup_8.x | sudo -E bash - \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs \
  && rm -rf /var/lib/apt/lists/*
 
