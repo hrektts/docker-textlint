@@ -1,4 +1,4 @@
-FROM hrektts/ubuntu:16.04.20170619
+FROM hrektts/ubuntu:16.04.20170802
 MAINTAINER mps299792458@gmail.com
 
 ENV TEXTLINT_VERSION=7.2.1
