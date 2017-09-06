@@ -1,9 +1,8 @@
 # docker-textlint
 
-[![Travis Build Status](https://travis-ci.org/hrektts/docker-textlint.svg?branch=master)](https://travis-ci.org/hrektts/docker-textlint)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-
 Dockerfile to build a container image containing [textlint](https://textlint.github.io/).
+
+[![Travis Build Status](https://travis-ci.org/hrektts/docker-textlint.svg?branch=master)](https://travis-ci.org/hrektts/docker-textlint)
 
 ## Rules
 
