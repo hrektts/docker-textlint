@@ -1,4 +1,4 @@
-FROM hrektts/ubuntu:16.04.20170802
+FROM hrektts/ubuntu:latest
 LABEL maintainer="mps299792458@gmail.com" \
       version="8.2.1"
 
