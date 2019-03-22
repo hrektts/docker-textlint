@@ -9,6 +9,7 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
 This image contains textlint rules as follows:
 
 - [textlint-rule-preset-jtf-style](https://www.npmjs.com/package/textlint-rule-preset-jtf-style)
+- [textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)
 - [textlint-rule-ja-no-abusage](https://www.npmjs.com/package/textlint-rule-ja-no-abusage)
 - [textlint-rule-ja-no-mixed-period](https://www.npmjs.com/package/textlint-rule-ja-no-mixed-period)
 - [textlint-rule-ja-no-successive-word](https://www.npmjs.com/package/textlint-rule-ja-no-successive-word)
