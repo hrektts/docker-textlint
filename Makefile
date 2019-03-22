@@ -5,5 +5,5 @@ build:
 
 release: build
 	@docker build -t hrektts/textlint:$(shell cat Dockerfile | \
-		grep version | \
+		grep "ARG TEXTLINT_VERSION" | \
 		sed -e 's/[^"]*"\([^"]*\)".*/\1/') .

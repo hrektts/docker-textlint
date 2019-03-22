@@ -1,9 +1,7 @@
 FROM node:10-stretch
+ARG TEXTLINT_VERSION="11.2.3"
 LABEL maintainer="mps299792458@gmail.com" \
-      version="9.1.1"
-
-ENV TEXTLINT_VERSION=9.1.1
-
+      version=$TEXTLINT_VERSION
 
 RUN npm install -g \
       textlint@${TEXTLINT_VERSION} \
