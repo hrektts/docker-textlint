@@ -6,6 +6,7 @@ LABEL maintainer="mps299792458@gmail.com" \
 RUN npm install -g \
       textlint@${TEXTLINT_VERSION} \
       textlint-rule-preset-jtf-style \
+      textlint-rule-preset-ja-technical-writing \
       textlint-rule-ja-no-abusage \
       textlint-rule-ja-no-mixed-period \
       textlint-rule-ja-no-successive-word \
