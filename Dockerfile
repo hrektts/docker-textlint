@@ -1,12 +1,9 @@
-FROM hrektts/ubuntu:latest
+FROM node:10-stretch
 LABEL maintainer="mps299792458@gmail.com" \
       version="9.1.1"
 
 ENV TEXTLINT_VERSION=9.1.1
 
-RUN wget -qO - https://deb.nodesource.com/setup_8.x | sudo -E bash - \
- && DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs \
- && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g \
       textlint@${TEXTLINT_VERSION} \
